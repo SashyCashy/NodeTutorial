@@ -16,8 +16,6 @@ app.get('/index.html', function(request, response) {
   response.sendFile(__dirname +'/index.html');
 });
 
-debugger
-
 app.post('/process_post', urlencodedParser,function(req, res){
   response = {
     first_name : req.body.first_name,
